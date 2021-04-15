@@ -1,6 +1,6 @@
 package ch03.ex3_4_1_NoOverridingForExtensionFunctions
 
-open class View {
+open class View { //open修飾符是用來表示該類別可以被繼承
     open fun click() = println("View clicked")
 }
 

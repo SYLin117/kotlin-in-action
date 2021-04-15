@@ -1,6 +1,6 @@
 package ch04.ex1_5_2_SealedClasses1
 
-sealed class Expr {
+sealed class Expr { // 使用sealed限制子類別
     class Num(val value: Int) : Expr()
     class Sum(val left: Expr, val right: Expr) : Expr()
 }

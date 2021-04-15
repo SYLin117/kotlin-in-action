@@ -1,10 +1,10 @@
 package ch04.main
 
-class Button : Clickable, Focusable {
+class Button : Clickable, Focusable {//同時implements兩個interface
     override fun click() = println("I was clicked")
 
     override fun showOff() {
-        super<Clickable>.showOff()
+        super<Clickable>.showOff() // 兩個相同名稱的fun都需要實作
         super<Focusable>.showOff()
     }
 }

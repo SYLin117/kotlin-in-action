@@ -6,7 +6,7 @@ class Sum(val left: Expr, val right: Expr) : Expr
 
 fun eval(e: Expr): Int =
     if (e is Num) {
-        e.value
+        e.value //使用if可以省略return
     } else if (e is Sum) {
         eval(e.right) + eval(e.left)
     } else {
